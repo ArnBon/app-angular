@@ -8,6 +8,7 @@ import { ListadoUsuariosComponent } from './listado-usuarios-component/listado-u
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app.config';
 import { provideHttpClient } from '@angular/common/http';
+import { EjemploPipesComponent } from './ejemplo-pipes-component/ejemplo-pipes-component';
 
 
 
@@ -20,19 +21,21 @@ import { provideHttpClient } from '@angular/common/http';
               IfComponent,
               AgregarTareaComponent,
               ForComponent,
-              ListadoUsuariosComponent
+              ListadoUsuariosComponent,
+              EjemploPipesComponent,
+
            ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
 
-  
+
   protected readonly title = signal('Servicios en Angular');
   protected readonly title2 = signal('Servicios en Angular con Observables');
   mensaje: string | undefined;
 
   constructor( private mensajeService: Mensajeservice ){
-    this.mensaje = this.mensajeService.obtenerMensaje();    
+    this.mensaje = this.mensajeService.obtenerMensaje();
   }
 }
