@@ -9,6 +9,7 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app.config';
 import { provideHttpClient } from '@angular/common/http';
 import { EjemploPipesComponent } from './ejemplo-pipes-component/ejemplo-pipes-component';
+import { NavegacionComponent } from './navegacion-component/navegacion-component';
 
 
 
@@ -23,6 +24,7 @@ import { EjemploPipesComponent } from './ejemplo-pipes-component/ejemplo-pipes-c
               ForComponent,
               ListadoUsuariosComponent,
               EjemploPipesComponent,
+              NavegacionComponent
 
            ],
   templateUrl: './app.html',
